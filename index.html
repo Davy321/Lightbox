@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lightbox Exercise</title>
+    <link rel="stylesheet" href="lightbox.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="lightbox.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+    <h1>My First Lightbox</h1>
+	<div id="images">
+		<img src="images/arabian-thumb.jpg" class="thumb" alt="arabian cantering" onclick="enlargeImage(1)"></img>
+		<img src="images/dog-thumb.jpg" class="thumb" alt="white puppy" onclick="enlargeImage(2)"></img>
+		<img src="images/horse-thumb.jpg" class="thumb" alt="horse in grass" onclick="enlargeImage(3)"></img>
+		<img src="images/horseandpony-thumb.jpg" class="thumb" alt="horse and foal" onclick="enlargeImage(4)"></img>
+		<img src="images/pinto-thumb.jpg" class="thumb" alt="horse head" onclick="enlargeImage(5)"></img>
+		<img src="images/tb-thumb.jpg" class="thumb" alt="horse" onclick="enlargeImage(6)"></img>
+	</div>
+	
+	<div id="lightbox"></div>
+	
+	<div id="positionBigImage">
+		<div id="boundaryBigImage">
+			<img id="x" src="images/x.png" alt="close" onclick="closeLightbox()"></img>
+			<img src="images/arabian.jpg" id="lightboxImage" alt="enlargedImage"></img>
+		</div>
+	</div>
+  </body>
+</html>
